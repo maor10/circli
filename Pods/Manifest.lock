@@ -1,0 +1,45 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking-Synchronous/2.x (0.3.1):
+    - AFNetworking (~> 2.0)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - JSONModel (1.2.0)
+  - RESTBase (0.0.1):
+    - AFNetworking
+
+DEPENDENCIES:
+  - AFNetworking
+  - AFNetworking-Synchronous/2.x
+  - JSONModel
+  - RESTBase (from `../RESTBase`)
+
+EXTERNAL SOURCES:
+  RESTBase:
+    :path: "../RESTBase"
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AFNetworking-Synchronous: 29531ad341ec465a4ff9b66dea9cf7272080e12e
+  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
+  RESTBase: 7de1e50d47eb89c14e1b8d82e641ac7c7b63e404
+
+COCOAPODS: 0.38.2

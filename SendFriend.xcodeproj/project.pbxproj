@@ -13,6 +13,12 @@
 		383DA80B1D09CE4100A7222C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383DA8091D09CE4100A7222C /* Main.storyboard */; };
 		383DA80D1D09CE4100A7222C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383DA80C1D09CE4100A7222C /* Assets.xcassets */; };
 		383DA8101D09CE4100A7222C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383DA80E1D09CE4100A7222C /* LaunchScreen.storyboard */; };
+		383DA81A1D09D3A700A7222C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 383DA8191D09D3A700A7222C /* User.m */; };
+		383DA81D1D09E9B200A7222C /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 383DA81C1D09E9B200A7222C /* Group.m */; };
+		383DA8201D09F37A00A7222C /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 383DA81F1D09F37A00A7222C /* RequestViewController.m */; };
+		3870C70C1D09FB88001BEF86 /* GroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3870C70B1D09FB88001BEF86 /* GroupView.m */; };
+		3870C70F1D09FF85001BEF86 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3870C70E1D09FF85001BEF86 /* profile.png */; };
+		3B5099ACE1BC8DDF0248B576 /* libPods-SendFriend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 914C2E7E84961AE10B4BF270 /* libPods-SendFriend.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		383DA80C1D09CE4100A7222C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		383DA80F1D09CE4100A7222C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		383DA8111D09CE4100A7222C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		383DA8181D09D3A700A7222C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		383DA8191D09D3A700A7222C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		383DA81B1D09E9B200A7222C /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		383DA81C1D09E9B200A7222C /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		383DA81E1D09F37A00A7222C /* RequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewController.h; sourceTree = "<group>"; };
+		383DA81F1D09F37A00A7222C /* RequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
+		3870C70A1D09FB88001BEF86 /* GroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupView.h; sourceTree = "<group>"; };
+		3870C70B1D09FB88001BEF86 /* GroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupView.m; sourceTree = "<group>"; };
+		3870C70E1D09FF85001BEF86 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		914C2E7E84961AE10B4BF270 /* libPods-SendFriend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SendFriend.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		999C8283A9447C8A7A3EDEFF /* Pods-SendFriend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendFriend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SendFriend/Pods-SendFriend.debug.xcconfig"; sourceTree = "<group>"; };
+		D2C5A8A5677864CF11050EC4 /* Pods-SendFriend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendFriend.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendFriend/Pods-SendFriend.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5099ACE1BC8DDF0248B576 /* libPods-SendFriend.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B7EE2A3AB145B225D7FDA6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				914C2E7E84961AE10B4BF270 /* libPods-SendFriend.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		383DA7F41D09CE4000A7222C = {
 			isa = PBXGroup;
 			children = (
 				383DA7FF1D09CE4100A7222C /* SendFriend */,
 				383DA7FE1D09CE4100A7222C /* Products */,
+				9226A06A825203186CA23552 /* Pods */,
+				0B7EE2A3AB145B225D7FDA6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +87,21 @@
 		383DA7FF1D09CE4100A7222C /* SendFriend */ = {
 			isa = PBXGroup;
 			children = (
+				3870C70D1D09FF85001BEF86 /* Images */,
+				383DA8171D09D38600A7222C /* Web Objects */,
 				383DA8031D09CE4100A7222C /* AppDelegate.h */,
 				383DA8041D09CE4100A7222C /* AppDelegate.m */,
 				383DA8061D09CE4100A7222C /* ViewController.h */,
 				383DA8071D09CE4100A7222C /* ViewController.m */,
+				383DA81E1D09F37A00A7222C /* RequestViewController.h */,
+				383DA81F1D09F37A00A7222C /* RequestViewController.m */,
 				383DA8091D09CE4100A7222C /* Main.storyboard */,
 				383DA80C1D09CE4100A7222C /* Assets.xcassets */,
 				383DA80E1D09CE4100A7222C /* LaunchScreen.storyboard */,
 				383DA8111D09CE4100A7222C /* Info.plist */,
 				383DA8001D09CE4100A7222C /* Supporting Files */,
+				3870C70A1D09FB88001BEF86 /* GroupView.h */,
+				3870C70B1D09FB88001BEF86 /* GroupView.m */,
 			);
 			path = SendFriend;
 			sourceTree = "<group>";
@@ -79,6 +114,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		383DA8171D09D38600A7222C /* Web Objects */ = {
+			isa = PBXGroup;
+			children = (
+				383DA8181D09D3A700A7222C /* User.h */,
+				383DA8191D09D3A700A7222C /* User.m */,
+				383DA81B1D09E9B200A7222C /* Group.h */,
+				383DA81C1D09E9B200A7222C /* Group.m */,
+			);
+			name = "Web Objects";
+			sourceTree = "<group>";
+		};
+		3870C70D1D09FF85001BEF86 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3870C70E1D09FF85001BEF86 /* profile.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9226A06A825203186CA23552 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				999C8283A9447C8A7A3EDEFF /* Pods-SendFriend.debug.xcconfig */,
+				D2C5A8A5677864CF11050EC4 /* Pods-SendFriend.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 383DA8141D09CE4100A7222C /* Build configuration list for PBXNativeTarget "SendFriend" */;
 			buildPhases = (
+				511F603C609B5CA60DB03E29 /* Check Pods Manifest.lock */,
 				383DA7F91D09CE4100A7222C /* Sources */,
 				383DA7FA1D09CE4100A7222C /* Frameworks */,
 				383DA7FB1D09CE4100A7222C /* Resources */,
+				73B46CE556D7F9266D077F2B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,17 +204,55 @@
 				383DA8101D09CE4100A7222C /* LaunchScreen.storyboard in Resources */,
 				383DA80D1D09CE4100A7222C /* Assets.xcassets in Resources */,
 				383DA80B1D09CE4100A7222C /* Main.storyboard in Resources */,
+				3870C70F1D09FF85001BEF86 /* profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		511F603C609B5CA60DB03E29 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		73B46CE556D7F9266D077F2B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendFriend/Pods-SendFriend-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		383DA7F91D09CE4100A7222C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				383DA81A1D09D3A700A7222C /* User.m in Sources */,
 				383DA8081D09CE4100A7222C /* ViewController.m in Sources */,
+				3870C70C1D09FB88001BEF86 /* GroupView.m in Sources */,
+				383DA8201D09F37A00A7222C /* RequestViewController.m in Sources */,
+				383DA81D1D09E9B200A7222C /* Group.m in Sources */,
 				383DA8051D09CE4100A7222C /* AppDelegate.m in Sources */,
 				383DA8021D09CE4100A7222C /* main.m in Sources */,
 			);
@@ -261,6 +364,7 @@
 		};
 		383DA8151D09CE4100A7222C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 999C8283A9447C8A7A3EDEFF /* Pods-SendFriend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SendFriend/Info.plist;
@@ -272,6 +376,7 @@
 		};
 		383DA8161D09CE4100A7222C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C5A8A5677864CF11050EC4 /* Pods-SendFriend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SendFriend/Info.plist;
@@ -300,6 +405,7 @@
 				383DA8161D09CE4100A7222C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

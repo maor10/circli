@@ -16,12 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [[User user] getForId:@"1" completion:^(BaseEntity* entity){
+        [[User user] getGroups:^(NSArray *groups){
+            NSLog(@"%lu", (unsigned long)[groups count]);
+            if ([groups count] > 0) {
+                
+                
+            }
+        }];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
